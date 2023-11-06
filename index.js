@@ -24,7 +24,7 @@ async function makePostRequest(url, data) {
         const responseData = await response.json();
         return responseData;
       } else {
-        console.error("Request message " + response);
+        console.error("Request code " + response.status);
       }
     } catch (error) {
       console.error("Error:", error);
